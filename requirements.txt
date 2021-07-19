@@ -2,10 +2,7 @@ aioredis==1.3.1
 appdirs==1.4.4
 asgiref==3.2.10
 astroid==2.4.2
-async-timeout==3.0.1
-attrs==20.2.0
-autobahn==20.7.1
-Automat==20.2.0
+
 beautifulsoup4==4.9.1
 Brotli==1.0.9
 bs4==0.0.1
@@ -17,11 +14,6 @@ colorama==0.4.3
 constantly==15.1.0
 cryptography==3.1.1
 css==0.1
-dash==1.16.3
-dash-core-components==1.12.1
-dash-html-components==1.1.1
-dash-renderer==1.8.2
-dash-table==4.10.1
 distlib==0.3.0
 dj-database-url==0.5.0
 Django==3.0.7
@@ -32,11 +24,8 @@ djangorestframework==3.11.1
 docutils==0.16
 dpd-components==0.1.0
 filelock==3.0.12
-Flask==1.1.2
-Flask-Compress==1.7.0
 future==0.18.2
 gazpacho==0.9.3
-googletrans==3.0.0
 gunicorn==20.0.4
 h11==0.9.0
 h2==3.2.0
@@ -53,10 +42,7 @@ isort==4.3.21
 itsdangerous==1.1.0
 javascript==2015.32.59
 Jinja2==3.0.0a1
-
 lazy-object-proxy==1.4.3
-lxml==4.5.2
-Mako==1.1.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
 MouseInfo==0.1.3
@@ -74,7 +60,6 @@ pyasn1==0.4.8
 pyasn1-modules==0.2.8
 PyAutoGUI==0.9.52
 pycparser==2.20
-pygame==1.9.6
 PyGetWindow==0.0.9
 Pygments==2.6.1
 PyHamcrest==2.0.2
@@ -118,4 +103,4 @@ Werkzeug==1.0.1
 whitenoise==5.2.0
 wrapt==1.12.1
 yfinance==0.1.62
-zope.interface==5.1.2
+
