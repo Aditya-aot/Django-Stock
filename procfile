@@ -1,1 +1,2 @@
-web: gunicorn Stock_Pridiction_Site.wsgi 
+
+web: gunicorn Stock_Pridiction_Site.wsgi --log-file=-
