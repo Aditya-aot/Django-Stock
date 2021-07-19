@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+# heroku 
+import django_heroku
+import dj_database_url
+from decouple import config
+# heroku 
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -50,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'Stock_Pridiction_Site.urls'
@@ -115,6 +122,13 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+# heroku
+STATICFILES_STORAGE = 'whitenoise.storange.CompressedManifestStorage'
+django_heroku.settings(locals())
+# heroku
+
 
 
 # Static files (CSS, JavaScript, Images)
