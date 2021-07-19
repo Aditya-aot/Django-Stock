@@ -32,7 +32,7 @@ SECRET_KEY = 'aat%q2fxm!@ht)3&-_9!q%zk&_q!^(%vd116j6pgpik3qpy)m%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['covid-19-track-adi.herokuapp.com','127.0.0.1']
 
 
 # Application definition
