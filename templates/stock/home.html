@@ -1,0 +1,34 @@
+{% extends 'stock/base.html'%}
+{% block content %}
+
+
+<br>
+        <form action="" method="post">{% csrf_token %}
+            {{form}} 
+            <button class='button'><span>Submit </span></button>
+        </form>
+
+<br>
+         {% for label,data in mylist %}
+         
+            
+            <ul class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                <div class="fw-bold"> {{label}}</div>
+                {{data}} 
+                </div>
+                <span class="badge bg-primary rounded-pill"></span>
+            </li>
+
+            </ul>
+
+        {%endfor%}   
+{{score}}
+         
+
+
+
+ 
+ {% endblock content %}
+
