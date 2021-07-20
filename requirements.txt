@@ -80,7 +80,7 @@ yfinance==0.1.62
 # filelock==3.0.12
 # future==0.18.2
 # gazpacho==0.9.3
-# gunicorn==20.0.4
+gunicorn==20.0.4
 # h11==0.9.0
 # h2==3.2.0
 # hiredis==1.1.0
