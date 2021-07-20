@@ -6,15 +6,14 @@ from json import dumps
 
 # stock 
 from datetime import timedelta, date
-import numpy as np
+import numpy as n
 # import matplotlib.pyplot as plt
 import pandas as pd
 import pandas_datareader as web
 
-import yfinance as yf
+import finance as yf
 
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestRegressor
 #  stock 
 
 # news
@@ -35,7 +34,7 @@ def home(request) :
     day=''
     a=0
     list=[]
-    label = ['Open','High','Low','Close','Volume','Dividends','Stock Splits']
+    label = ['Open','High','Low','Close','Volume','Dividend','Stock Splits']
     full_list = {}
 
     form = search_from()
@@ -50,13 +49,6 @@ def home(request) :
 
     #  .
         # TATAPOWER.NS
-        msft = yf.Ticker(symbol)
-        hist = msft.history(period="500d")
-        new_df = hist.copy()
-        new_df['year'], new_df['month'], new_df['day'] = hist.index.year, hist.index.month, hist.index.day
-
-        new_df.reset_index(inplace=True,drop=False)
-        new_df= new_df.drop(['Date'],axis='columns')
 
             
         scaled_close= new_df.drop(['Open','High','Low','Close','Volume','Dividends','Stock Splits'],axis='columns')
@@ -142,20 +134,7 @@ def chart(request) :
         inputs= scaled_close
         target = scaled_open
 
-                
-        x_train, x_test, y_train, y_test = train_test_split(inputs,target,test_size=0.2)
-                
-        model = RandomForestRegressor()
-        model.fit(x_train, y_train)
-
-        score=model.score(x_test, y_test)
-
-        date_req = date.today() + timedelta(days=50)
-
-        year = date_req.strftime("%Y")
-        month = date_req.strftime("%m")
-        day = date_req.strftime("%d")
-
+            
         lab=[]
         for i in range(int(days)) :
             date_req = date.today() + timedelta(days=i)
