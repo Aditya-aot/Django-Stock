@@ -15,7 +15,7 @@ import finance as yf
 
 from sklearn.model_selection import train_test_split
 #  stock 
-
+# aditya
 # news
 from bs4 import BeautifulSoup
 import pandas as pd
