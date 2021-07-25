@@ -11,7 +11,7 @@ import numpy as n
 import pandas as pd
 import pandas_datareader as web
 
-import finance as yf
+import finance as yaaf
 
 from sklearn.model_selection import train_test_split
 #  stock 
