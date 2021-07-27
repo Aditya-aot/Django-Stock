@@ -32,32 +32,28 @@
     </div>
   </div>
 
+aditya
 
-
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
+  
+{% if user.is_authenticated %}
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+      
+       
             <a class="navbar-brand" href="/">Sketch</a>
             
            <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
          </button>
-
+        <ul class="nav justify-content-center">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
                 <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/home">Home</a>
                 </li>
+                
                 <li class="nav-item">
                 <a class="nav-link" href="/chart">Chart</a>
                 </li>
@@ -73,6 +69,7 @@
                 <li class="nav-item">
                 <a class="nav-link" href="/About" >About</a>
                 </li>
+           
 
               
 
@@ -105,8 +102,10 @@
         
             </form>
             </div>
+               </ul> 
         </div>
+      
         </nav>
-
+        
 
 </body>
