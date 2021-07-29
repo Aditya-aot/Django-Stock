@@ -22,6 +22,14 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import requests
 
+
+
+def test(request) :
+
+    context = {}
+    return render(request, 'stock/base2.html',context)
+
+
 def welcome(request) :
 
     context = {}
