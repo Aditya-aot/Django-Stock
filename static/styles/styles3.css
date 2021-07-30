@@ -94,11 +94,11 @@ nav a:hover {
   top: 25px;
 }
 .logo:before {
-  content: "»";
+  content: "a";
   left: 20px;
 }
 .logo:after {
-  content: "«";
+  content: "a";
   left: 34px;
 }
 
@@ -379,10 +379,11 @@ section {
     background-image: repeating-linear-gradient(-24deg,transparent,transparent 4px,var(--colour-background-stripes) 0, var(--colour-background-stripes) 5px);
     z-index: -1;
   }
-  
+
+  /* to change size */
   .articles__article,
   .articles__article:before {
-    width: calc(var(--base-grid)*125);
+    width: calc(var(--base-grid)*90);
     height: calc(var(--base-grid)*35);
   }
   
@@ -459,4 +460,11 @@ section {
     transform: translateX(calc(var(--base-grid)*1.5));
     transition: opacity .5s ease-in,transform .3s ease-in-out .25s;
   }
+
+/* ################################################################ */
+/* ##################################################################### */
+/* ################################################################## */
+/* ------------------table------------------------- */
+
+
 
