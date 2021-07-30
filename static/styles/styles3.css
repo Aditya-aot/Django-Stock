@@ -352,7 +352,7 @@ section {
   .articles {
     margin: calc(var(--base-grid)*2) auto calc(var(--base-grid)*5);
     display: grid;
-    grid-row-gap: calc(var(--base-grid)*-8);
+    grid-row-gap: calc(var(--base-grid)*-18);
     grid-column-gap: calc(var(--base-grid)*-56);
     grid-template-columns: repeat(auto-fit,minmax(calc(var(--base-grid)*65),1fr));
     justify-items: center;
