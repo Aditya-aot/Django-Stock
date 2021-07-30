@@ -13,8 +13,8 @@
          {% for label,data in mylist %}
          
             
-            <ul class="list-group list-group-numbered">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
+            {% comment %} <ul class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start ">
                 <div class="ms-2 me-auto">
                 <div class="fw-bold"> {{label}}</div>
                 {{data}} 
@@ -22,8 +22,24 @@
                 <span class="badge bg-primary rounded-pill"></span>
             </li>
 
-            </ul>
-
+            </ul> {% endcomment %}
+ 
+            <table class="table table-striped table-dark">
+ 
+  <thead>
+    <tr>
+      <th scope="col">{{label}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{data}}</td>
+    </tr>
+  
+  </tbody>
+ 
+</table>
+ 
         {%endfor%}   
 {{score}}
          
