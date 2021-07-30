@@ -329,7 +329,7 @@ section {
 /* ######################################################### */
 /* ############################################################## */
 
-/* ------------CARD ---------*/
+/* ------------CARD 2 (NEWS) ---------*/
 
 
 :root {
@@ -351,9 +351,9 @@ section {
   .articles {
     margin: calc(var(--base-grid)*2) auto calc(var(--base-grid)*5);
     display: grid;
-    grid-row-gap: calc(var(--base-grid)*8);
-    grid-column-gap: calc(var(--base-grid)*6);
-    grid-template-columns: repeat(auto-fit,minmax(calc(var(--base-grid)*35),1fr));
+    grid-row-gap: calc(var(--base-grid)*-8);
+    grid-column-gap: calc(var(--base-grid)*-56);
+    grid-template-columns: repeat(auto-fit,minmax(calc(var(--base-grid)*65),1fr));
     justify-items: center;
   }
   
@@ -381,7 +381,7 @@ section {
   
   .articles__article,
   .articles__article:before {
-    width: calc(var(--base-grid)*35);
+    width: calc(var(--base-grid)*85);
     height: calc(var(--base-grid)*35);
   }
   
