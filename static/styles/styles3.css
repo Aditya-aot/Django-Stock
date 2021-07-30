@@ -382,7 +382,7 @@ section {
   
   .articles__article,
   .articles__article:before {
-    width: calc(var(--base-grid)*85);
+    width: calc(var(--base-grid)*125);
     height: calc(var(--base-grid)*35);
   }
   
@@ -435,7 +435,7 @@ section {
   }
   
   .articles__title {
-    font-size: calc(var(--base-grid)*4);
+    font-size: calc(var(--base-grid)*3);
     line-height: 1.125;
     font-weight: 700;
     letter-spacing: -.02em;
