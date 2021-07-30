@@ -335,10 +335,11 @@ section {
 :root {
     --base-grid: 8px;
     --colour-body-background: #4cc3d8;
-    --colour-background: #fff;
-    --colour-background-folded: #dad6d6;
-    --colour-background-stripes: rgba(255,255,255,.5);
-    --colour-text: #1a1a1a;
+    /* --colour-background:linear-gradient(rgb(32, 32, 32), rgb(54, 54, 54)); */
+    --colour-background: rgb(54, 54, 54);
+    --colour-background-folded: #555555;
+    --colour-background-stripes: rgb(255, 255, 255);
+    --colour-text: #cecece;
   }
   
   *, :after, :before {
