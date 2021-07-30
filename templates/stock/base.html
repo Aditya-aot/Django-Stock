@@ -10,8 +10,8 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
     
-    {% comment %} <script src="{% static 'styles/main.js' %}" defer ></script> {% endcomment %}
-    {% comment %} <link rel="stylesheet" href="{% static 'styles/styles.css' %} "> {% endcomment %}
+    <script src="{% static 'styles/main1.js' %}" defer ></script> 
+    <link rel="stylesheet" href="{% static 'styles/styles2.css' %} ">
     
 
 
@@ -29,19 +29,19 @@
 
 <body>
 
-<div class="container nav-wrapper">
+{% comment %} <div class="container nav-wrapper"> {% endcomment %}
 
 
 
 
- <style>
+ {% comment %} <style>
  body {
   background-image: url('https://img.freepik.com/free-vector/modern-city-skyline-background_77417-791.jpg?size=626&ext=jpg&ga=GA1.2.959066255.1624579200');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 } 
-</style> 
+</style>  {% endcomment %}
 
 <style>
 divv {
@@ -55,7 +55,7 @@ divv {
 
 
 
-
+{% comment %} 
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
@@ -211,11 +211,36 @@ divv {
 <br>
 
 
-<p class="text-white ">
+<p class="text-white "> {% endcomment %}
 
+
+
+
+<nav>
+  <div class="logo"></div>
+  <ul>
+    <li><a href="/home">Home</a></li>
+    <li><a href="/chart">Chart</a></li>
+    <li><a href="/news">News</a></li>
+    <li><a href="/Discuss">Discuess</a></li>
+    <li><a href="/About">About</a></li>
+    <li><a href="/About">More</a></li>
+  </ul>
+</nav>
+<header>
+  <div class="headline">
+    <div class="inner">
+      <h1>Hello</h1>
+      <p>Scroll down the page</p>
+    </div>
+  </div>
+</header>
+
+<section>
 {% block content %}
 
 {% endblock content %}
+</section>
 </p>
 
 </div>
