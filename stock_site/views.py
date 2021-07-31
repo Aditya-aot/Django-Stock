@@ -28,6 +28,14 @@ def test(request) :
     context = {}
     return render(request, 'stock/base2.html',context)
 
+def discuess(request) :
+    context = {}
+    return render(request, 'stock/discuss.html',context)
+
+def about(request) :
+    context = {}
+    return render(request, 'stock/about.html',context)
+
 
 def welcome(request) :
     today = date.today()
