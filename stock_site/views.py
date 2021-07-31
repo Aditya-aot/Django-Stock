@@ -25,14 +25,16 @@ import requests
 
 
 def test(request) :
-
     context = {}
     return render(request, 'stock/base2.html',context)
 
 
 def welcome(request) :
+    today = date.today()
+    d = today.strftime("%d-%b-%Y")
 
-    context = {}
+    context = {"day":d}
+ 
     return render(request, 'stock/welcome.html',context)
 
 

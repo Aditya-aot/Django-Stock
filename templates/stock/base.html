@@ -11,7 +11,7 @@
    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
     
     <script src="{% static 'styles/main1.js' %}" defer ></script> 
-    <link rel="stylesheet" href="{% static 'styles/styles3.css' %} ">
+    <link rel="stylesheet" href="{% static 'styles/styles4.css' %} ">
     
 
 
@@ -215,6 +215,11 @@ divv {
 
 
 
+<style>
+adi {
+  border: 2px solid blue;
+}
+</style>
 
 <nav>
   <a href="/"><div class="logo"></div></a>
@@ -224,7 +229,19 @@ divv {
     <li><a href="/news">News</a></li>
     <li><a href="/Discuss">Discuess</a></li>
     <li><a href="/About">About</a></li>
-    <li><a href="/About">More</a></li>
+    
+    <li class="nav-item dropdown">
+          <a  href="#"   data-toggle="dropdown" >
+            <adi>More ▼</adi>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#" >HI{{ user.first_name}}</a></li>
+            <li><a class="dropdown-item" href="/account/logout" >Logout</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+
   </ul>
 </nav>
 <header>
