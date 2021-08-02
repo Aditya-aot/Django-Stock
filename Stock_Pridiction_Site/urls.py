@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path , include 
 from stock_site import views
 from accounts import views
+from discuss import views
 
 
 urlpatterns = [
     path('', include('stock_site.urls')) ,
     path('account/', include('accounts.urls')) ,
+    path('discuss/', include('accounts.urls')) ,
     path('admin/', admin.site.urls),
 ]
