@@ -221,37 +221,75 @@ adi {
 }
 </style>
 
-<nav>
-  <a href="/"><div class="logo"></div></a>
-  <ul>
-    <li><a href="/home">Home</a></li>
-    <li><a href="/chart">Chart</a></li>
-    <li><a href="/news">News</a></li>
-    <li><a href="/discuss">Discuss</a></li>
-    <li><a href="/about">About</a></li>
-    
-    <li class="nav-item dropdown">
-          <a  href="#"   data-toggle="dropdown" >
-            <adi>More ▼</adi>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#" >HI{{ user.first_name}}</a></li>
-            <li><a class="dropdown-item" href="/account/logout" >Logout</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
 
-  </ul>
-</nav>
-<header>
-  <div class="headline">
-    <div class="inner">
-      <h1>Stock Guide</h1>
-      <p>We help you Guide to Future</p>
-    </div>
-  </div>
-</header>
+{% if user.is_authenticated %}
+          <nav>
+            <a href="/"><div class="logo"></div></a>
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/chart">Chart</a></li>
+              <li><a href="/news">News</a></li>
+              <li><a href="/discuss">Discuss</a></li>
+              <li><a href="/about">About</a></li>
+              
+              <li class="nav-item dropdown">
+                    <a  href="#"   data-toggle="dropdown" >
+                      <adi>More ▼</adi>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#" >HI &nbsp; {{ user.first_name}}</a></li>
+                      <li><a class="dropdown-item" href="/account/logout" >Logout</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+
+            </ul>
+          </nav>
+          <header>
+            <div class="headline">
+              <div class="inner">
+                <h1>Stock Guide</h1>
+                <p>We help you Guide to Future</p>
+              </div>
+            </div>
+          </header>
+
+{% else %}
+                      <nav>
+            <a href="/"><div class="logo"></div></a>
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/chart">Chart</a></li>
+              <li><a href="/news">News</a></li>
+              <li><a href="/discuss">Discuss</a></li>
+              <li><a href="/about">About</a></li>
+              
+              <li class="nav-item dropdown">
+                    <a  href="#"   data-toggle="dropdown" >
+                      <adi>More ▼</adi>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/account/login" >Login</a></li>
+                      <li><a class="dropdown-item" href="/account/register/" >Register</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+            </ul>
+          </nav>
+          <header>
+            <div class="headline">
+              <div class="inner">
+                <h1>Stock Guide</h1>
+                <p>We help you Guide to Future</p>
+              </div>
+            </div>
+          </header>
+     
+{% endif %}
+
+
 
 <section>
 {% block content %}
