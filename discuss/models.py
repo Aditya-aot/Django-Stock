@@ -6,5 +6,7 @@ from django.contrib.auth.models import  User, auth
 
 
 class chat(models.Model):
-     user = models.ForeignKey(User, on_delete=models.CASCADE , null= True  )
-   
+    user = models.ForeignKey(User, on_delete=models.CASCADE , null= True  )
+    pub_date = models.DateTimeField(auto_now=False, auto_now_add=True, null=True)
+    content = models.TextField()
+    
