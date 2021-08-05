@@ -23,6 +23,6 @@ from discuss import views
 urlpatterns = [
     path('', include('stock_site.urls')) ,
     path('account/', include('accounts.urls')) ,
-    path('discuss/', include('accounts.urls')) ,
+    path('discuss/', include('discuss.urls')) ,
     path('admin/', admin.site.urls),
 ]

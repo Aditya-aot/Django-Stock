@@ -3,6 +3,6 @@ from django.shortcuts import render
 # Create your views here.
 
 
-def home(request) :
+def discuss(request) :
     context = {}
-    return render(request, 'stock/base2.html',context)
+    return render(request, 'stock/discuss.html',context)
