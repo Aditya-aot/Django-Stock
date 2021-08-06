@@ -4,5 +4,6 @@ from django.shortcuts import render
 
 
 def discuss(request) :
-    context = {}
+    a=['a','b','c','d','c']
+    context = {'a':a}
     return render(request, 'discuss/discuss.html',context)
