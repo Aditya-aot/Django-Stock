@@ -4,10 +4,12 @@
 {% block content %}
 aditya
 
-        <form action="" method="post">{% csrf_token %}
+        <form action="{{stock}}/" method="post">{% csrf_token %}
             {{form}} <br>
             <button class='btn btn-primary'><span>Submit </span></button>
         </form>
+   {{stock}}
+   
     {% for aa in a %}
     <br>
         {{aa}}
