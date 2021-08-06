@@ -5,4 +5,4 @@ from django.shortcuts import render
 
 def discuss(request) :
     context = {}
-    return render(request, 'stock/discuss.html',context)
+    return render(request, 'discuss/discuss.html',context)

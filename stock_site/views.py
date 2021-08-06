@@ -30,7 +30,7 @@ def test(request) :
 
 def discuess(request) :
     context = {}
-    return render(request, 'stock/discuss.html',context)
+    return render(request, 'discuss/discuss.html',context)
 
 def about(request) :
     context = {}
