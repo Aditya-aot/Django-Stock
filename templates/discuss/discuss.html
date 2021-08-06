@@ -4,9 +4,14 @@
 {% block content %}
 aditya
 
-{% for aa in a %}
-    {{aa}}
-{% endfor %}
+        <form action="" method="post">{% csrf_token %}
+            {{form}} <br>
+            <button class='btn btn-primary'><span>Submit </span></button>
+        </form>
+    {% for aa in a %}
+    <br>
+        {{aa}}
+    {% endfor %}
 
 
 
