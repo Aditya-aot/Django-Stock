@@ -22,9 +22,9 @@ def discuss(request) :
     #                     }
     #     return render(request, 'discuss/discuss.html',context)
         
-    # context = {'a':a ,
-    #                 'form':form ,
-    #                     }
+    context = {'a':a ,
+                    'form':form ,
+                        }
     return render(request, 'discuss/discuss.html',context) 
 
 
