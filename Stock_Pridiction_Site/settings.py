@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'stock_site',
     'accounts',
-    'discuss',
+    # 'discuss',
     'discuss_part2'
 ]
 
