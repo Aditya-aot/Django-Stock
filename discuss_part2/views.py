@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-from .forms import search_day
+from .forms import search_day ,Form
 # Create your views here.
 
 # from .forms import search_day
@@ -11,7 +11,7 @@ from .forms import search_day
 def discuss(request) :
 
     form = search_day()
-
+    form2 = Form()
     a=['a','b','c','d','c']
     if request.method =='POST' :
         form = search_day(request.POST, request.FILES)
@@ -26,6 +26,7 @@ def discuss(request) :
         
     context = {'a':a ,
                     'form':form ,
+                    'form2':form2
                         }
     return render(request, 'discuss/discuss.html',context) 
 

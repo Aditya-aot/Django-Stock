@@ -6,10 +6,14 @@ from django.contrib.auth.models import  User, auth
 
 
 class TutorialCategory(models.Model):
-
-    tutorial_category = models.CharField(max_length=200)
-    category_summary = models.CharField(max_length=200)
-    category_slug = models.CharField(max_length=200, default=1)
+    list = (
+        ('a','a'),
+        ('b','b'),
+        ('c','c'),
+    )
+    tutorial_category = models.CharField(max_length=200 , choices=list)
+    # category_summary = models.CharField(max_length=200)
+    # category_slug = models.CharField(max_length=200, default=1)
 
     class Meta:
         # Gives the proper plural name for admin
