@@ -8,16 +8,17 @@ aditya
 {{form2}}
 <br>
 ---------
-        <form action="{{stock}}/" method="post">{% csrf_token %}
+
+        <form action="/discuss1/" method="post">{% csrf_token %}
             {{form}} <br>
             <button class='btn btn-primary'><span>Submit </span></button>
         </form>
    {{stock}}
    
-    {% for aa in a %}
+    {% comment %} {% for aa in a %}
     <br>
         {{aa}}
-    {% endfor %}
+    {% endfor %} {% endcomment %}
 
 
 

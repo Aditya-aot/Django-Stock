@@ -13,13 +13,14 @@ def discuss(request) :
     form = search_day()
     form2 = Form()
     a=['a','b','c','d','c']
+
     if request.method =='POST' :
-        form = search_day(request.POST, request.FILES)
-        if form.is_valid() :
-            stock = form.cleaned_data['stock']
+        form2 = search_day(request.POST, request.FILES)
+        if form2.is_valid() :
+            stock = form2.cleaned_data['tutorial_category']
 
         context = {'a':a ,
-                    'form':form ,
+                    'form':form2 ,
                     'stock' : stock ,
                         }
         return render(request, 'discuss/discuss.html',context)
