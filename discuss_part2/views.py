@@ -21,7 +21,7 @@ def discuss(request) :
             stock = form2.cleaned_data['tutorial_category']
 
         context = {
-                        'form':form2 ,
+                        'form2':form2 ,
                         'stock' : stock ,
                             }
         return render(request, 'discuss/discuss.html',context)
