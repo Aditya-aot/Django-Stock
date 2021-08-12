@@ -10,23 +10,24 @@ from .forms import search_day ,Form
 
 def discuss(request) :
 
-    form = search_day()
+    # form = search_day()
     form2 = Form()
-    a=['a','b','c','d','c']
 
+    # a=['a','b','c','d','c']
+    
     if request.method =='POST' :
-        form2 = search_day(request.POST, request.FILES)
+        form2 = Form(request.POST, request.FILES)
         if form2.is_valid() :
             stock = form2.cleaned_data['tutorial_category']
 
-        context = {'a':a ,
-                    'form':form2 ,
-                    'stock' : stock ,
-                        }
-        return render(request, 'discuss/discuss.html',context)
+            context = {
+                        'form':form2 ,
+                        'stock' : stock ,
+                            }
+            return render(request, 'discuss/discuss.html',context)
         
-    context = {'a':a ,
-                    'form':form ,
+    context = {
+                    # 'form':form ,
                     'form2':form2
                         }
     return render(request, 'discuss/discuss.html',context) 

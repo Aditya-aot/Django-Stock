@@ -4,6 +4,11 @@ from .models import TutorialCategory
 # from django.form import ModelForm
 
 
+list1 = (
+        ('a','a'),
+        ('b','b'),
+        ('c','c'),
+    )
 
 days_s= [(10,10),(50,50),(100,100),(500,500)]
 class search_day(forms.Form) :
@@ -11,8 +16,8 @@ class search_day(forms.Form) :
 
 
 class Form(ModelForm):
+    # tutorial_category = forms.ChoiceField(choices=list1)
     class Meta:
-        # category =  forms.ChoiceField( choices=['1','2','3'], required=False)
         model = TutorialCategory
         fields = [
             'tutorial_category' ,
