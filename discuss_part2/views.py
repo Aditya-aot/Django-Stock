@@ -20,14 +20,13 @@ def discuss(request) :
         if form2.is_valid() :
             stock = form2.cleaned_data['tutorial_category']
 
-            context = {
+        context = {
                         'form':form2 ,
                         'stock' : stock ,
                             }
-            return render(request, 'discuss/discuss.html',context)
+        return render(request, 'discuss/discuss.html',context)
         
-    context = {
-                    # 'form':form ,
+    context = {   # 'form':form ,
                     'form2':form2
                         }
     return render(request, 'discuss/discuss.html',context) 
