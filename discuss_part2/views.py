@@ -14,7 +14,7 @@ def discuss(request) :
     form2 = Form()
 
     # a=['a','b','c','d','c']
-    
+    # 
     if request.method =='POST' :
         form2 = Form(request.POST, request.FILES)
         if form2.is_valid() :
