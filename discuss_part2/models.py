@@ -10,7 +10,6 @@ class TutorialCategory(models.Model):
         ('a','a'),
         ('b','b'),
         ('c','c'),
-        ('c','c'),
     )
     tutorial_category = models.CharField(max_length=200 , choices=list)
     # category_summary = models.CharField(max_length=200)
