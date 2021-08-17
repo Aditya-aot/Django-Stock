@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'stock_site',
     'accounts',
     # 'discuss',
-    'discuss_part2'
+    'discuss_part2',
+    'chat'
 ]
 
 MIDDLEWARE = [

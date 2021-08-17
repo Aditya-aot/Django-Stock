@@ -19,11 +19,13 @@ from stock_site import views
 from accounts import views
 # from discuss import views
 from discuss_part2 import views
+from chat import views
 
 
 urlpatterns = [
     path('', include('stock_site.urls')) ,
     path('account/', include('accounts.urls')) ,
+    path('chat/', include('chat.urls')) ,
     # path('discuss/', include('discuss.urls')) ,
     path('discuss1/', include('discuss_part2.urls')) ,
     path('admin/', admin.site.urls),
