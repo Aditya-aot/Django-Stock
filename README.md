@@ -1,1 +1,2 @@
-# Django-Stock
+# Django-Stock 
+https://stock-guide.herokuapp.com/
