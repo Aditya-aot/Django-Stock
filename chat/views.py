@@ -11,7 +11,6 @@ from django.views import generic
 from django import forms
 
 # print(request.user.username)
-# aditya
 
 def chat_view(request) :
     a=(request.user.username)
