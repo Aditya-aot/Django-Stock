@@ -99,6 +99,22 @@ def like_chat(request, pk) :
 
     return HttpResponseRedirect('/chat/')
 
+# def total_likes(request , pk ) :
+#     chat = Full_chat.objects.get(id=pk)
+#     total = chat.total_likes()
+#     liked = False
+#     if chat.likes.filter(id=request.user.id).exists():
+#         liked = True
+#     else :
+#         liked =False
+#
+#     context = {'total_likes': total ,
+#                'liked': liked ,
+#                }
+#     return render(request, 'chat/chat.html', context)
+
+
+
 
 def comment_view(request, pk) :
     form = CommentForm()
