@@ -39,7 +39,7 @@ def chat_view(request) :
                 }
 
     return render(request, 'chat/chat.html', context)
-
+#  aditya
 
 
 def user_post(request) :
