@@ -39,7 +39,7 @@ def chat_view(request) :
                 }
 
     return render(request, 'chat/chat.html', context)
-#  aditya
+
 
 
 def user_post(request) :
@@ -114,7 +114,7 @@ def like_chat(request, pk) :
 #     return render(request, 'chat/chat.html', context)
 
 
-
+# this is for test only
 
 def comment_view(request, pk) :
     form = CommentForm()
