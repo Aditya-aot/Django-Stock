@@ -114,7 +114,6 @@ def like_chat(request, pk) :
 #     return render(request, 'chat/chat.html', context)
 
 
-# this is for test only
 
 def comment_view(request, pk) :
     form = CommentForm()
